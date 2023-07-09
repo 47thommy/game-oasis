@@ -9,7 +9,7 @@ interface gameInterface {
 }
 const GameCard = ({ games }: gameInterface) => {
   return (
-    <Card borderRadius={10} overflow="hidden" width="300px">
+    <Card>
       <Image src={getCroppedImage(games.background_image)}></Image>
       <CardBody>
         <Heading fontSize="2xl">{games.name}</Heading>
