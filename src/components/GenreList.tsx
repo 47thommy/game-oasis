@@ -7,14 +7,14 @@ const GenreList = () => {
   return (
     <List>
       {data.map((genre) => (
-        <ListItem key={genre.id}>
+        <ListItem key={genre.id} paddingY="6px">
           <HStack>
             <Image
               boxSize="32px"
               borderRadius={8}
               src={getCroppedImage(genre.image_background)}
             ></Image>
-            <Text>{genre.name}</Text>
+            <Text fontSize="lg">{genre.name}</Text>
           </HStack>
         </ListItem>
       ))}
